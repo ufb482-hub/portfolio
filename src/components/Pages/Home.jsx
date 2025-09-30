@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css"; // External CSS file
-import profilePic from "../../assets/images/profile.jpg"; // Your picture path
+import profilePic from "../../assets/images/profile1.jpg"; // Your picture path
 
 const Home = () => {
   return (
