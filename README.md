@@ -6,7 +6,7 @@ This is my personal portfolio showcasing my projects, skills, and services.
 ---
 
 Live Portfolio
-Check it out here: [Live Portfolio](https://your-portfolio.vercel.app)
+Check it out here:https://portfolio-five-sigma-84.vercel.app/
 
 ---
 
@@ -25,5 +25,6 @@ Check it out here: [Live Portfolio](https://your-portfolio.vercel.app)
 - UI/UX Design & Canvas Animations  
 
 ---
+
 
 
