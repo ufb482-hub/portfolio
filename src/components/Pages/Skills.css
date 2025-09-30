@@ -7,9 +7,21 @@
 
 .skills-container h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #1a1a1a;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+/* Nice underline for heading */
+.skills-container h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #00bfff;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
 }
 
 .skills-grid {
@@ -22,27 +34,58 @@
 
 .skill-card {
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 1rem;
-  width: 120px;
+  width: 130px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+  background: #f0faff;
 }
 
 .skill-card img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 0.5rem;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 0.7rem;
 }
 
 .skill-card p {
   font-size: 1rem;
-  color: #555;
-  font-weight: 500;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 3rem 1rem;
+  }
+
+  .skills-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .skills-grid {
+    gap: 1.5rem;
+  }
+
+  .skill-card {
+    width: 110px;
+    padding: 0.8rem;
+  }
+
+  .skill-card img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .skill-card p {
+    font-size: 0.9rem;
+  }
 }

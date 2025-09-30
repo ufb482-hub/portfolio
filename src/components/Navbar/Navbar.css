@@ -1,6 +1,6 @@
 /* Navbar container */
 nav {
-  background-color: #1a1a1a; /* Dark background */
+  background-color: #1a1a1a;
   color: white;
   padding: 1rem 2rem;
   position: sticky;
@@ -9,18 +9,16 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-/* Navbar logo/title */
+/* Logo */
 nav .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  letter-spacing: 1px;
 }
 
-/* Navbar links container */
-nav ul {
+/* Navbar links */
+.nav-links {
   list-style: none;
   display: flex;
   gap: 2rem;
@@ -28,28 +26,31 @@ nav ul {
   padding: 0;
 }
 
-/* Navbar links */
-nav ul li a {
+.nav-links li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-/* Hover effect */
-nav ul li a:hover {
-  color: #00bfff; /* Light blue highlight */
-}
-
-/* Active link (if you use NavLink with active class) */
-nav ul li a.active {
+.nav-links li a:hover {
   color: #00bfff;
-  border-bottom: 2px solid #00bfff;
 }
 
-/* Mobile menu (optional) */
+/* Hamburger button */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
-  nav ul {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
     flex-direction: column;
     gap: 1rem;
     position: absolute;
@@ -57,7 +58,12 @@ nav ul li a.active {
     right: 0;
     background-color: #1a1a1a;
     width: 200px;
-    display: none; /* will toggle with JS for hamburger */
+    display: none; /* hidden by default */
     padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex; /* show when toggled */
   }
 }
