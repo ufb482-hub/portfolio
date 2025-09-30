@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css"; // External CSS file
-import profilePic from "../../assets/images/profile1.jpg"; // Your picture path
+import profilep from "../../assets/images/p1.png"; // Your picture path
 
 const Home = () => {
   return (
@@ -21,7 +21,7 @@ const Home = () => {
 
         {/* Right section: profile picture */}
         <div className="home-image">
-          <img src={profilePic} alt="Umar Profile" />
+          <img src={profilep} alt="Umar Profile" />
         </div>
       </div>
     </div>

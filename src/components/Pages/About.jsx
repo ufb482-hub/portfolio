@@ -1,13 +1,13 @@
 import React from "react";
 import "./About.css";
-import profilePic from "../../assets/images/profile1.jpg"; // Your picture path
+import profilep from "../../assets/images/p1.png"; // Your picture path
 const About = () => {
   return (
     <div className="about-container" id="about">
       <div className="about-content">
         {/* Left section: profile image */}
         <div className="about-image">
-          <img src={profilePic} alt="Umar Profile" />
+          <img src={profilep} alt="Umar Profile" />
         </div>
 
         {/* Right section: About text */}
