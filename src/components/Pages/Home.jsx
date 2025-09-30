@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css"; // External CSS file
 import profilep from "../../assets/images/p1.png"; // Your picture path
 
@@ -14,9 +15,9 @@ const Home = () => {
             I build modern, responsive web applications and teach practical
             coding skills. Check out my projects and skills below!
           </p>
-          <a href="/contact" className="home-button">
-            Hire Me
-          </a>
+         <Link to="/contact" className="home-button">
+  Hire Me
+</Link>
         </div>
 
         {/* Right section: profile picture */}

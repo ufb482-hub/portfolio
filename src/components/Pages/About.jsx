@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./About.css";
 import profilep from "../../assets/images/p1.png"; // Your picture path
 const About = () => {
@@ -24,7 +25,9 @@ const About = () => {
             Node.js, Express, MongoDB, and integrating APIs. I also have experience
             with deployment, Docker, cloud basics, and client-oriented development.
           </p>
-          <a href="/contact" className="about-button">Contact Me</a>
+          <Link to="/contact" className="home-button">
+  Contact Me
+</Link>
         </div>
       </div>
     </div>
